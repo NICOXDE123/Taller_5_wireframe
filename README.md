@@ -5,6 +5,7 @@ Asignatura: diseño Web +ia
 Profesor: Cristian iglesias 
 
 📖 Descripción del Proyecto
+
 El presente proyecto consiste en el desarrollo de una maqueta web para la aerolínea AeroVia Express, basada únicamente en Bootstrap 5 (última versión estable, implementada a través del CDN oficial). El principal objetivo del proyecto es replicar de manera fiel la estructura, jerarquía visual y responsividad del wireframe entregado, utilizando exclusivamente las utilidades y componentes que ofrece Bootstrap.
 
 El proyecto incluye:
