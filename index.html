@@ -61,29 +61,69 @@
   </div>
 </div>
 
-<!-- Buscador de vuelos -->
+<!-- Sección de tabs y formulario de viaje -->
 <div class="container mt-4">
   <div class="card shadow-sm">
     <div class="card-body">
+      <!-- Tabs -->
+      <ul class="nav nav-tabs mb-3">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Vuelos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Paquetes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Hoteles</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Autos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Seguros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Upgrade</a>
+        </li>
+      </ul>
+
+      <!-- Formulario de búsqueda -->
       <form>
         <div class="row g-3">
-          <div class="col-md-3">
+          <div class="col-md-2">
             <label for="origen" class="form-label">Origen</label>
             <input type="text" class="form-control" id="origen" placeholder="Ciudad de origen">
           </div>
-          <div class="col-md-3">
+          <div class="col-md-2">
             <label for="destino" class="form-label">Destino</label>
             <input type="text" class="form-control" id="destino" placeholder="Ciudad de destino">
           </div>
           <div class="col-md-2">
-            <label for="fechaSalida" class="form-label">Salida</label>
-            <input type="date" class="form-control" id="fechaSalida">
+            <label for="fechaIda" class="form-label">Fecha Ida</label>
+            <input type="date" class="form-control" id="fechaIda">
           </div>
           <div class="col-md-2">
-            <label for="fechaVuelta" class="form-label">Regreso</label>
+            <label for="fechaVuelta" class="form-label">Fecha Vuelta</label>
             <input type="date" class="form-control" id="fechaVuelta">
           </div>
-          <div class="col-lg-2 d-flex align-items-end">
+          <div class="col-md-1">
+            <label for="clase" class="form-label">Clase</label>
+            <select class="form-select" id="clase">
+              <option selected>Economy</option>
+              <option>Business</option>
+              <option>Primera</option>
+            </select>
+          </div>
+          <div class="col-md-1">
+            <label for="pasajeros" class="form-label">Pasajeros</label>
+            <select class="form-select" id="pasajeros">
+              <option selected>1 pasajero</option>
+              <option>2 pasajeros</option>
+              <option>3 pasajeros</option>
+              <option>4 pasajeros</option>
+            </select>
+          </div>
+          <div class="col-md-2 d-flex align-items-end">
             <button type="submit" class="btn w-100" style="background-color: #d9534f; color: white;">Buscar</button>
           </div>
         </div>
